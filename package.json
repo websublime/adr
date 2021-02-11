@@ -65,7 +65,11 @@
     "package.json"
   ],
   "license": "MIT",
-  "repository": "git@gitlab.i.prozis.tech:miguelramos/prozis-boilerplate.git",
+  "repository": "git@github.com:websublime/adr.git",
+  "author": {
+    "name": "Miguel Ramos",
+    "email": "miguel.marques.ramos@gmail.com"
+  },
   "publishConfig": {
     "access": "public"
   }
