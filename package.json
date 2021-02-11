@@ -1,0 +1,72 @@
+{
+  "name": "@websublime/adr",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "bin": "dist/cli.js",
+  "types": "@types/index.d.ts",
+  "scripts": {
+    "api-documenter": "api-documenter",
+    "docs": "api-documenter markdown --input-folder dist --output-folder dist/docs",
+    "test": "jest",
+    "build": "./build.sh && yarn docs",
+    "rollup": "node rollup.config.js",
+    "compile": "tsc -p tsconfig.build.json",
+    "start": "./node_modules/.bin/ts-node cli.ts",
+    "declaration": "tsc -p tsconfig.build.json --emitDeclarationOnly"
+  },
+  "peerDependencies": {
+    "core-js": "^3.6.5"
+  },
+  "dependencies": {
+    "colors": "^1.3.3",
+    "commander": "^2.20.0",
+    "dayjs": "1.8.33",
+    "find-in-files": "^0.5.0",
+    "fs-extra": "^9.0.1",
+    "inquirer": "^6.4.1",
+    "lru-cache": "^5.1.1",
+    "markdown-it": "^11.0.0",
+    "table": "^5.4.1",
+    "walk": "^2.3.14",
+    "walk-sync": "^1.1.3"
+  },
+  "devDependencies": {
+    "@microsoft/api-documenter": "^7.12.7",
+    "@microsoft/api-extractor": "^7.8.12",
+    "@types/fs-extra": "^9.0.6",
+    "@types/inquirer": "^7.3.0",
+    "@types/jest": "^26.0.3",
+    "@types/lru-cache": "^5.1.0",
+    "@types/markdown-it": "^10.0.2",
+    "@types/node": "^12.12.2",
+    "@types/table": "^5.0.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^26.1.0",
+    "babel-preset-env": "^1.7.0",
+    "generate-source-map": "^0.0.5",
+    "jest": "^26.1.0",
+    "rollup": "^2.18.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-inject-process-env": "^1.3.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-require-context": "^1.0.0",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "ts-jest": "^26.1.1",
+    "ts-node": "^8.10.2",
+    "tslib": "^1.10.0"
+  },
+  "files": [
+    "dist/",
+    "@types/",
+    "package.json"
+  ],
+  "license": "MIT",
+  "repository": "git@gitlab.i.prozis.tech:miguelramos/prozis-boilerplate.git",
+  "publishConfig": {
+    "access": "public"
+  }
+}

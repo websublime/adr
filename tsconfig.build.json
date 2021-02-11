@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "preserveSymlinks": true,
+    "allowSyntheticDefaultImports":true,
+    "declaration": true,
+    "sourceMap": false,
+    "declarationMap": true,
+    "declarationDir": "@types",
+    "pretty": true,
+    "rootDir": ".",
+    "strict": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "types": ["node"],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib" : [
+      "es2018"
+    ]
+  },
+  "exclude": ["./tsconfig.build.json", "./scripts", "node_modules/**"],
+  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.d.ts"]
+}

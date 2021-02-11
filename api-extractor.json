@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/api-extractor/v7/api-extractor.schema.json",
+  "projectFolder": "./",
+  "mainEntryPointFilePath": "./@types/index.d.ts",
+  "bundledPackages": [],
+  "compiler": {
+    "skipLibCheck": true,
+    "tsconfigFilePath": "./tsconfig.build.json"
+  },
+  "apiReport": {
+    "enabled": true,
+    "reportFileName": "adr.api.md",
+    "reportFolder": "./dist/docs/"
+  },
+  "docModel": {
+    "enabled": true,
+    "apiJsonFilePath": "./dist/adr.api.json"
+  },
+  "dtsRollup": {
+    "enabled": true,
+    "untrimmedFilePath": "./@types/adr-raw.d.ts",
+    "betaTrimmedFilePath": "./@types/adr-beta.d.ts",
+    "publicTrimmedFilePath": "./@types/index.d.ts"
+  },
+  "tsdocMetadata": {
+    "enabled": true,
+    "tsdocMetadataFilePath": "./dist/tsdoc-metadata.json"
+  },
+  "messages": {
+    "compilerMessageReporting": {
+      "default": {
+        "logLevel": "warning"
+      }
+    },
+    "extractorMessageReporting": {
+      "default": {
+        "logLevel": "warning"
+      }
+    },
+    "tsdocMessageReporting": {
+      "default": {
+        "logLevel": "warning"
+      }
+    }
+  }
+}
