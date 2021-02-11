@@ -5,7 +5,7 @@ Create ADR markdown documents to register architecture decisions in your project
 ## Installation
 
 ```bash
-yarn global @websubile/adr
+yarn global @websublime/adr
 
 or
 
