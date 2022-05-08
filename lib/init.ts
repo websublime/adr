@@ -1,10 +1,10 @@
 /* eslint-disable no-console */
 /* eslint-disable @typescript-eslint/no-var-requires */
 /**
- * Copyright Prozis All Rights Reserved.
+ * Copyright Websublime All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://prozis.com/license
+ * found in the LICENSE file at https://websublime.dev/license
  */
 import { Color } from 'colors';
 import { getWorkDir } from './utils';
